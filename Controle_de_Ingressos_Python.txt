@@ -1,15 +1,22 @@
 nomes = []
 j = 0
-
-print("***Pagantes Antecipados***")
-for i in range(3):
-    nome = input(f"\nDigite o {i+1} nome: ")
+condicao = 0
+print("**Pagantes Antecipados**")
+print("_________")
+while (condicao < 1):
+    nome = input("\nDigite o nome: ")
     nomes.append(nome)
     j = j + 1
+    condicao = int(input("Deseja adicionar mais nomes? \n[0] - Sim\n[1] - Nao: "))
+    
 
 nomes.sort()
-caixa = j * 30
+qtd_nomes = len(nomes)
+caixa = qtd_nomes * 30
+print("_________")
 print(f"\nSera adicionado ao caixa: R${caixa}")
+print("\nQuantidade de pagantes antecipados: ",qtd_nomes)
+print("_________")
+print("\tLista atualizada: ")
 for nome in nomes:
-    print("\nLista atualizada: "nome)
-    
+    print(nome)
