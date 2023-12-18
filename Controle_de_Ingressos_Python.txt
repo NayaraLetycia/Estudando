@@ -1,0 +1,15 @@
+nomes = []
+j = 0
+
+print("***Pagantes Antecipados***")
+for i in range(3):
+    nome = input(f"\nDigite o {i+1} nome: ")
+    nomes.append(nome)
+    j = j + 1
+
+nomes.sort()
+caixa = j * 30
+print(f"\nSera adicionado ao caixa: R${caixa}")
+for nome in nomes:
+    print("\nLista atualizada: "nome)
+    
