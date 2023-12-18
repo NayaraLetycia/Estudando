@@ -1,2 +1,2 @@
 # Estudando
-Adicionando pequenos codigos de treino do dia-a-dia.
+Adicionando pequenos codigos que vou necessitando criar no dia-a-dia.
